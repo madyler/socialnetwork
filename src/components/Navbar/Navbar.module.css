@@ -1,0 +1,15 @@
+.nav {
+    text-align: center;
+    grid-area: n;
+    background-color: blanchedalmond;
+}
+
+.item a{
+    color: brown;
+    text-decoration-color: black;
+}
+
+.item.active a{
+    color: darkslateblue;
+    text-decoration-color: red;
+}
