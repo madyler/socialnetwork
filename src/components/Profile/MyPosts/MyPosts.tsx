@@ -8,8 +8,7 @@ export const MyPosts = () => {
            <input/>
             <button>Add post</button>
         </div>
-        <Post/>
-        <Post/>
-        <Post/>
+        <Post message={'Hi!'} likesCount={5}/>
+        <Post message={'Hello!'} likesCount={31}/>
     </div>
 }
