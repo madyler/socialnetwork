@@ -1,17 +1,13 @@
 import React from "react";
 import {Post} from "./Post/Post";
 import s from './MyPosts.module.css'
+import {PostType} from "../../../redux/state";
 
-let posts = [
-    {id: 1, message: 'React', likesCount: 5},
-    {id: 2, message: 'Redux', likesCount: 6},
-    {id: 3, message: 'HTML', likesCount: 12},
-    {id: 4, message: 'CSS', likesCount: 2},
-    {id: 5, message: 'Angular', likesCount: 14},
-    {id: 6, message: 'JS', likesCount: 14},
-]
+type PropsType = {
+    posts: Array<PostType>
+}
 
-export const MyPosts = () => {
+export const MyPosts: React.FC<PropsType> = ({posts}) => {
     return <div className={s.myPosts}>
         My posts
         <div>
